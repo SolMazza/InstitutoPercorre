@@ -1,7 +1,7 @@
-<h1> 💠TEXTO💠</h1>
+<h1> 💠Evolução do curso de Desenvolvimento Web no Instituto Percorre💠</h1>
 
 <div>
-⚪Texto;
+⚪Registro por aula, com exceção para trabalhos e avaliações que utilizarem mais de uma aula;
   <br>
 ⚪Texto;
   <br>
@@ -9,6 +9,6 @@
   <br>
 ⚪Texto;
   <br>
-⚪Texto.
+⚪Duração do curso -> 4 meses, Agosto - Dezembro de 2026.
 
 </div>
