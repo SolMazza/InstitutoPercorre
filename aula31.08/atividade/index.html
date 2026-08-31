@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tabelas em HTML</h1>
+        <p>table é uma tag semântica utilizada para delimitar um espaço onde será uma tabela</p>
+    </header>
+
+    <body>
+        <main>
+
+            <section id="tabela">
+                <table>
+
+                    <!-- caption tag para assessiblidade, leitor de tela -->
+                    <caption>Tabela de bolos da confeitaria Solar </caption>
+
+                    <!-- thead define que essa secção é o cabeçalho, importante na semântica e para o css/js -->
+                    <thead>
+                        <tr>
+                            <!-- cada TH define um titulo do cabeçalho -->
+                            <th> <!-- linha em branco--></th>
+                            <th>Serve Pessoas</th>
+                            <th>Kilo</th>
+                            <th>Recheio</th>
+                            <th>Alergicos</th>
+                        </tr>
+                    </thead>
+
+                    <!-- tbody define que a secção é de dados, importante na semântica e para o css/js -->
+                    <tbody>
+
+                        <!-- tr define nova linha -->
+                        <tr>
+                            <!-- define o conteúdo da célula da tabela -->
+                            <th>Bolo Santa Rosa</th>
+                            <td>20</td>
+                            <td>1.500</td>
+                            <td>Oreo com Brigadeiro</td>
+                            <td>Leite, Glutén, Ovos</td>
+                        </tr>
+                        <tr>
+                            <th>Bolo Fit</th>
+                            <td>6</td>
+                            <td>500</td>
+                            <td>Morango e abacaxi</td>
+                            <td>glutén</td>
+                        </tr>
+                        <tr>
+                            <th>Bolo 3 chocolates</th>
+                            <td>40</td>
+                            <td>2.000</td>
+                            <td>Chocolate ao leite, chocolate branco e chocolate amargo</td>
+                            <td>Leite, glutén, Ovos</td>
+                        </tr>
+                        <tr>
+                            <th>Bolo 3 leites</th>
+                            <td>15</td>
+                            <td>1.000</td>
+                            <td>3 leites(leite condensado, creme de leite, leite de cocô)</td>
+                            <td>Leite, coco, glutén, ovos</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </main>
+    </body>
+</body>
+
+</html>

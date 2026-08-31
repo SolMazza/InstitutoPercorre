@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Carros do Olaf</h1>
+    </header>
+
+    <body>
+        <main>
+
+            <section id="tabela">
+                <table>
+                    <!-- caption tag para assessiblidade, leitor de tela -->
+                    <caption>Tabela de Carros do Olaf a Venda </caption>
+
+                    <!-- thead define que essa secção é o cabeçalho, importante na semântica e para o css/js -->
+                    <thead>
+                        <tr>
+                            <!-- cada TH define um titulo do cabeçalho -->
+                            <th>Modelo</th>
+                            <th>Ano</th>
+                            <th>Km</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+
+                    <!-- tbody define que a secção é de dados, importante na semântica e para o css/js -->
+                    <tbody>
+
+                        <tr>
+                            <td>Celta</td>
+                            <td>2015</td>
+                            <td>123000</td>
+                            <td id="coluna-preco">16.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Voyage</td>
+                            <td>2022</td>
+                            <td>45000</td>
+                            <td id="coluna-preco">42.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Prisma</td>
+                            <td>2025</td>
+                            <td>0</td>
+                            <td id="coluna-preco">26.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>307</td>
+                            <td>2011</td>
+                            <td>140000</td>
+                            <td id="coluna-preco">26.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Renegade</td>
+                            <td>2025</td>
+                            <td>0</td>
+                            <td id="coluna-preco">118.000,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </main>
+    </body>
+</body>
+
+</html>

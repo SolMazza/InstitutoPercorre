@@ -1,0 +1,59 @@
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header>h1 {
+    color: lightcoral;
+    font-size: 7vh;
+    margin-bottom: 0.5vh;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+
+}
+   #coluna-preco {
+      text-align: right;
+    }
+
+caption {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  color:lightcoral;
+}
+
+tbody{
+    background-color: #b9a8be;
+}
+th, td {
+    border: 1px solid rgb(54, 7, 56);
+    padding: 2%;
+    width: 27vh;
+}
+thead{
+    background-color: azure;
+}
+
+#coluna-preco::before {
+      content: "R$ ";
+      color: #2e7d32; 
+      font-weight: 500;
+    }
+
+main {
+    display: flex;
+    justify-content: center;
+}
