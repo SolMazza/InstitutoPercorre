@@ -10,6 +10,9 @@
 
     <!-- tag title do título da aba da página -->
     <title>Anotações de HTML</title>
+    
+    <!-- link para o arquivo de estilo da página -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- corpo da página, onde fica toda estrutura visível da página -->
@@ -19,42 +22,69 @@
     <header style="display: flex; justify-content: center;">
         <!-- h1 título principal -->
         <h1>Anotações das aulas de HTML</h1>
+
         <!-- parte de navegação entre páginas -->
-        <a
-            href="https://averdade.org.br/2026/04/lutas-populares-no-brasil-1906-1910-a-classe-operaria-comeca-sua-organizacao/">Começo
-            da Organziação Operária Brasileira</a>
-        <a href="main.html">Voltar</a>
         <nav>
+            <a
+                href="https://averdade.org.br/2026/04/lutas-populares-no-brasil-1906-1910-a-classe-operaria-comeca-sua-organizacao/">Começo
+                da Organziação Operária Brasileira</a>
+            <a href="main.html">Voltar</a>
 
+            <!-- download utilizando um arquivo -->
+            <a href="SolIFRS.rar" download="SolIFRS.rar">Download Trabalho IFRS</a>
         </nav>
+
     </header>
+
+
+      <!-- <main>tag do conteudo principal da página somente 1 por página -->
     <main>
-        <section id="header e nav">
-            <p>
-            <nav>
-                <!-- download utilizando um arquivo -->
-                <a href="SolIFRS.rar" download="SolIFRS.rar">Download Trabalho IFRS</a>
-                <a href="main.html">Voltar</a>
-            </nav>
-            </p>
-
-
+        <!-- <section> tag para agrupar elemento sobre mesmo assunto, podendo ter várias por parte -->
             <section id="Tabelas">
-                <p> Tabelas </p>
+
+
+                <!-- na tabela todos os elementos precisão estar dentro da tag Table -->
                 <table>
-                    <!-- define o cabeçalho -->
-                    <th></th>
-                    <!-- define nova linha -->
-                    <tr>
-                        <!-- define o conteúdo da célula da tabela -->
-                        <td></td>
-                    </tr>
-                    </table>
+                    <!-- caption tag para assessiblidade, leitor de tela -->
+                    <caption>Título da tabela</caption>
+                    </caption>
+
+                    <!-- thead define que essa secção é o cabeçalho, importante na semântica e para o css/js -->
+                    <thead>
+                        <tr>
+                            <!-- cada TH define um titulo do cabeçalho -->
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <!-- tbody define que a secção é de dados, importante na semântica e para o css/js -->
+                    <tbody>
+
+                        <!-- tr define uma linha da tabela -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
 
             </section>
 
     </main>
 
+    <!-- <article> tag para conteúdos independente do restante, podendo estar fora ou dentro do main/section -->
+    <article>
+    </article>
+
+    <!-- <footer> tag para rodapé da página -->
     <!-- &#169; é um código para aparecer o simbolo de copyright -->
     <footer> todos os esquerdos reservados &#169; </footer>
 </body>
