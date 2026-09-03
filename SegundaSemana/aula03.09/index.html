@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Types</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- uso de tipos de no forms e do select -->
+
+<body>
+
+    <header>
+        <h1> Tipos dentro do Forms</h1>
+    </header>
+    <main>
+        <section id="selectForm">
+
+            <form action="#">
+                <div class="baseForms" id="divRadio">
+
+                    <h2>Cursos Percorre</h2>
+                    <!-- input de seleção única, type = radio. Nesse input o label vem depois do input -->
+                    <input type="radio" name="curso" id="opcao1">
+                    <label for="opcao1">Dev Web</label><br>
+                    <input type="radio" name="curso" id="opcao2">
+                    <label for="opcao2">Dev mobile</label><br>
+                    <input type="radio" name="curso" id="opcao3">
+                    <label for="opcao3">Dev IOS</label><br>
+                    <input type="radio" name="curso" id="opcao4">
+                    <label for="opcao4">Dev Back</label>
+                    <br></br>
+
+                </div>
+
+                <div class="baseForms" id="divCheckbox">
+
+                    <!-- input de Multipla seleção, type = checkbox. Nesse input o label vem depois do input -->
+                    <h2>Unidades Percorre</h2>
+                    <input type="checkbox" class="inputCheckbox" name="unidade" id="cidade1">
+                    <label class="labelCheckbox" for="cidade1">Gravataí</label>
+                    <input type="checkbox" class="inputCheckbox" name="unidade" id="cidade2">
+                    <label class="labelCheckbox" for="cidade2">Novo Hamburgo</label>
+                    <input type="checkbox" class="inputCheckbox" name="unidade" id="cidade3">
+                    <label class="labelCheckbox" for="cidade3">Canoas</label>
+                    <input type="checkbox" class="inputCheckbox" name="unidade" id="cidade4">
+                    <label class="labelCheckbox" for="cidade4"> Restinga - Porto Alegre </label> <br> </br>
+
+                </div>
+
+                <div class="baseForms" id="divSelect">
+
+                    <!-- Menu suspenso, usando select e option -->
+                    <h2>Turno do Ensino</h2>
+
+                    <select name="turno" id="turnos">
+                        <!-- disable usado desabilitar (não dar para selecionar) selected deixa ela em primeiro (selecionada) -->
+                        <option value="" disabled selected>Selecione sua opção</option>
+                        <option value="manha">turno manhã</option>
+                        <option value="tarde">turno tarde</option>
+                        <option value="noite">turno noite</option>
+                        <option value="sabado">sábado</option>
+
+                    </select>
+
+
+                </div>
+            </form>
+
+        </section>
+    </main>
+</body>
+
+</html>
