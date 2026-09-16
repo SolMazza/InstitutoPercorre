@@ -1,0 +1,27 @@
+.box1 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(209, 91, 75);
+    border: 2px solid red;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.box2 {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(187, 112, 41);
+    border: 2px solid rgb(168, 26, 26);
+    margin-bottom: 10px;
+}
+
+/* 
+inline - Exibe um elemento em linha (inline) a outro elemento.
+
+block - exibe um eloemento com um bloco (block). permite Width & height.
+
+inline-block - Exibe o elemento como um bloco em linha. permite width/height.
+
+none - remove o elemento
+*/

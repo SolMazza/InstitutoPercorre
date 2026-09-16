@@ -1,0 +1,82 @@
+/* Ordem de precedência dos estilos, (qual vai aparecer)*/
+/* 1. Se o usuário escolher um estilo
+   2. Inline
+   3. Código embutido
+   4. código externo
+   5. navegador padrão
+ */
+
+/* intervalo dentro das chaves { } é o escopo/bloco do estilo/código */
+body {
+    /* os estilos no css são propriedades height, width etc...  */
+    height: 100%;
+    width: auto;
+    /* cada linha com propriedades são sentenção/declaração*/
+    background-color: antiquewhite;
+        margin: 0 5vh 0;
+}
+#sarah{
+    font-size: 2rem;
+    /* aumenta a fonte de acordo com o valor raiz do elemento raiz (16 pix por padrão) */
+}
+
+.sarahDT{
+    font-size: 1.5em;
+}
+
+h1, h2{
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+}
+
+h1{
+    /* alinha o texto ao centro */
+    text-align: center;
+    color: brown;
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+h2{
+    
+    text-align: center;
+    font-style: italic;
+    /* cada fonte em ordem será tentada usar. */
+    /* aconselhavem tirar a serifa de texto longos */
+    font-family: 'Courier New', Courier, monospace, Geneva, Tahoma;
+}
+
+dd{
+
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#hexadecimal{
+    background-color: #6c2d91;
+    margin: 0px 5px 0 8px;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+#hexadecimal:hover{
+    background-color: red;
+
+}
+
+#rgb{
+    background-color: rgb(122, 40, 19);
+    margin: 0px 5px 0 8px;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+#rgb:hover{
+    background-color: #3c185a;
+    scale: 1.5;
+
+}

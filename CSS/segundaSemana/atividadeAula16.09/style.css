@@ -1,0 +1,78 @@
+/* Ordem de precedência dos estilos, (qual vai aparecer)*/
+/* 1. Se o usuário escolher um estilo
+   2. Inline
+   3. Código embutido
+   4. código externo
+   5. navegador padrão
+ */
+
+ :root{
+    font-size: 20px;
+ }
+/* intervalo dentro das chaves { } é o escopo/bloco do estilo/código */
+body {
+    /* os estilos no css são propriedades height, width etc...  */
+    height: 100%;
+    width: auto;
+    /* cada linha com propriedades são sentenção/declaração*/
+    background-color: antiquewhite;
+        margin: 0 5vh 0;
+}
+#sarah{
+    font-size: 2rem;
+    /* aumenta a fonte de acordo com o valor raiz do elemento raiz (16 pix por padrão) */
+}
+
+.unidade1{
+    font-size: 2rem;
+}
+
+.unidade2{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    /* cada fonte em ordem será tentada usar. */
+    /* aconselhavem tirar a serifa de texto longos */
+    font-family: 'Courier New', Courier, monospace, Geneva, Tahoma;
+}
+
+.unidadeP{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.sarahDT{
+    font-size: 25px;
+}
+
+.sarahDD{
+    font-size: 1.5em;
+}
+
+h1, h2{
+    margin-bottom: 0;
+}
+
+h1{
+    /* alinha o texto ao centro */
+    text-align: center;
+    color: brown;
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+
+dd{
+
+    display: flex;
+    /* flex-direction: column; */
+}
+
+h3{
+    margin: 25px 5px 5px    ;
+}
+dl{
+    margin: 0;
+}
