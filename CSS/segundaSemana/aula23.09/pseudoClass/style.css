@@ -1,0 +1,5 @@
+input:focus{
+    color: blueviolet;
+    border: 3px solid chocolate;
+    outline-style: none; /* outline-style: none desabilita a borda padrão*/
+}
