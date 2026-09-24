@@ -3,3 +3,146 @@ font-family: "cooper-black-std", serif;
 font-weight: 400;
 font-style: normal; 
 font-style: italic;*/
+:root {
+    --cor-sombraText: #5f0909;
+    --cor-vermelhoPastel: #7c1146;
+    --cor-verdePastel: #19771163;
+    --cor-azulAcizentado: #0a3b3b5e;
+    --cor-amareloPastel: #635b168e;
+    --cor-rosaPastel: #8420888f;
+}
+
+* {
+    font-family: "cooper-black-std", serif;
+    color: beige;
+    text-shadow: 1px 2px var(--cor-sombraText);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Media screen é para telas. (computador, celular etc)
+  Media print é para impressoras
+  Media speak é para kindle (ou dispositivos que lem a tela todo)
+*/
+@media screen and (max-width: 400px) {
+    .nome {
+        padding: 10px;
+        border: 2px;
+        margin: 10px;
+    }
+
+    #nome1 {
+        background-color: var(--cor-vermelhoPastel);
+    }
+
+    #nome2 {
+        background-color: var(--cor-verdePastel);
+    }
+
+    #nome3 {
+        background-color: var(--cor-azulAcizentado);
+    }
+
+    #nome4 {
+        background-color: var(--cor-amareloPastel);
+    }
+
+    #nome5 {
+        background-color: var(--cor-rosaPastel);
+    }
+}
+
+/* Media print é para impressoras (a tela do ctrl + P) */
+@media print and (max-width: 800px) {
+
+    .nome {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+}
+
+/* all - aplica para todos quando não especifíca o tipo (screen, print, etc) */
+@media (min-width: 400px) {
+
+    .nome {
+        padding: 15px;
+        border: 3px;
+        margin: 15px;
+    }
+
+
+    #nome1 {
+        background-color: var(--cor-rosaPastel);
+    }
+
+    #nome2 {
+        background-color: var(--cor-vermelhoPastel);
+    }
+
+    #nome3 {
+        background-color: var(--cor-verdePastel);
+    }
+
+    #nome4 {
+        background-color: var(--cor-azulAcizentado);
+    }
+
+    #nome5 {
+        background-color: var(--cor-amareloPastel);
+    }
+}
+
+
+
+/* quando usamos "min" estamos usando mobile-first */
+@media (min-width: 600px) {
+    .nome {
+        font-size: 2rem;
+        padding: 15px;
+        border: 3px solid var(--cor-sombraText);
+        margin: 20px;
+        text-align: center;
+    }
+
+    #nome1 {
+        background-color: var(--cor-amareloPastel);
+    }
+
+    #nome2 {
+        background-color: var(--cor-rosaPastel);
+    }
+
+    #nome3 {
+        background-color: var(--cor-vermelhoPastel);
+    }
+
+    #nome4 {
+        background-color: var(--cor-verdePastel);
+    }
+
+    #nome5 {
+        background-color: var(--cor-azulAcizentado);
+    }
+}
+
+/* landscape serve para quando o dispositvo estiver no modo paisagem/ horizontal */
+@media (orientation: landscape) {
+    body {
+        background-color: antiquewhite;
+    }
+}
+
+/* breakPoint -> uma tela bem especifica*/
+@media (min-width: 750px) and (max-width: 780px) {
+
+    body {
+        background-color: violet;
+    }
+}
