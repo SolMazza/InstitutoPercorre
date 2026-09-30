@@ -1,0 +1,55 @@
+:root {
+    --cor-roxo1: #d2b7e5;
+    --cor-roxo2:
+}
+
+body {
+    height: 100dvh;
+    margin: 0;
+    background-color: #9680ac;
+}
+
+/* Grid Container: é o elemento ou classe que definimos a propriedade display: grid.
+Então, esse elemento será o pai de todos os itens do Grid. Por exemplo, podemos
+configurar uma classe .container em um elemento <section> e vários itens dentro dessa
+seção. */
+.container {
+    display: grid;
+    height: 100dvh;
+    background-color: rgb(71, 12, 126);
+    border: 2px solid #6247aa;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas:
+        "header header header"
+        "main main prop"
+        "main main prop"
+        "footer footer footer"
+    ;
+
+
+}
+
+.box {
+    padding: 4px;
+    border: 1px solid black;
+}
+
+#n1 {
+    grid-area: header;
+}
+
+#n2 {
+    grid-area: main;
+    font-size: 5em;
+    justify-content: center;
+}
+
+#n3 {}
+
+#n4 {}

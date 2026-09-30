@@ -1,0 +1,77 @@
+ :root {
+     --cor-laranja: #ea8676;
+     --cor-laranjaAvermelhado: #d24858;
+     --cor-bege: #fdeecd;
+     --cor-verde: #275223;
+ }
+
+ body {
+     height: 100dvh;
+     margin: 0;
+ }
+
+ * {
+     font-family: "cooper-black-std", serif;
+     color: beige;
+     text-shadow: 1px 2px var(--cor-sombraText);
+ }
+
+
+ #container {
+     display: grid;
+     background-color: var(--cor-bege);
+     height: 100dvh;
+     border: 3px solid var(--cor-laranjaAvermelhado);
+     row-gap: 10px;
+     column-gap: 10px;
+     padding: 10px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas:
+        "header header header"
+        "main prop prop"
+        "prop2 prop2 main2"
+        "footer footer footer"
+    ;
+
+
+ }
+
+ .box {
+     padding: 4px;
+     border: 1px solid black;
+
+ }
+
+ #nome1 {
+     background-color: var(--cor-laranjaAvermelhado);
+     grid-area: header;
+ }
+
+ #nome2 {
+     grid-area: main;
+     background-color: #275223;
+ }
+
+ #nome3 {
+    grid-area: prop;
+    background-color: #d24858;
+
+ }
+
+ #nome4 {
+     grid-area: main2;
+     background-color: #275223;
+ }
+
+ #nome5 {
+    grid-area: prop2;
+    background-color: #d24858;
+ }
+
+ #nome6 {
+    grid-area: footer;
+    background-color: aquamarine;
+ }
