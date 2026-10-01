@@ -26,15 +26,17 @@
      column-gap: 10px;
      padding: 10px;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: repeat(6, 1fr);
 
-    grid-template-areas:
-        "header header header"
-        "main prop prop"
-        "prop2 prop2 main2"
-        "footer footer footer"
-    ;
+     grid-template-areas:
+         "header header header header header header"
+         "main main prop prop prop prop"
+         "main main prop prop prop prop"
+         "main2 main2 main2 main2 prop2 prop2"
+         "main2 main2 main2 main2 prop2 prop2"
+         "footer footer footer footer footer footer"
+     ;
 
 
  }
@@ -56,8 +58,8 @@
  }
 
  #nome3 {
-    grid-area: prop;
-    background-color: #d24858;
+     grid-area: prop;
+     background-color: #d24858;
 
  }
 
@@ -67,11 +69,11 @@
  }
 
  #nome5 {
-    grid-area: prop2;
-    background-color: #d24858;
+     grid-area: prop2;
+     background-color: #d24858;
  }
 
  #nome6 {
-    grid-area: footer;
-    background-color: aquamarine;
+     grid-area: footer;
+     background-color: aquamarine;
  }
