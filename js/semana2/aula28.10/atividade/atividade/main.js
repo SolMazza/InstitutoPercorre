@@ -1,6 +1,5 @@
 let nomes = [];
 
-// alert("Bom dia! Bem vinda ao nosso sistema de coletas de nome :)");
 
 function adicionarNome() {
     adicionar = true;
