@@ -1,0 +1,19 @@
+div {
+    background-color: #f6ccff;
+    border: 2px solid #74058c;
+    border-radius: 10%;
+    width: 20dvw;
+    height: 25dvh;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    background-color: #ccd8ff;
+    border: 2px solid #05348c;
+    border-radius: 30%;
+    margin-bottom: 20px;
+}
+button:hover {
+transform: scale(1.1);
+}
